@@ -1,0 +1,42 @@
+.we-doings {
+  padding-bottom: 94px;
+}
+
+.we-doings__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--second-title-color);
+}
+
+.we-doings-list {
+  display: flex;
+  margin-top: 50px;
+}
+
+.we-doings-list__item {
+  width: 370px;
+  height: 294px;
+  position: relative;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.we-doings-list__text {
+  width: 100%;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: rgba(47, 48, 58, 0.8);
+  padding: 27px 0;
+}
