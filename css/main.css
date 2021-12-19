@@ -402,6 +402,22 @@ button {
   padding-bottom: 94px;
 }
 
+@media screen and (max-width: 1199px) {
+  .we-doings {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    -webkit-clip-path: inset(50%);
+            clip-path: inset(50%);
+    margin: -1px;
+  }
+}
+
 .we-doings__title {
   font-weight: 700;
   font-size: 36px;
