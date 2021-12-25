@@ -68,15 +68,15 @@ button {
   margin: 0 auto;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 480px) {
   .container {
-    width: 450px;
+    width: 480px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .container {
-    width: 738px;
+    width: 768px;
   }
 }
 
@@ -93,7 +93,6 @@ button {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 30px;
 }
 
 .socials__item {
@@ -125,10 +124,6 @@ button {
 .socials__link:hover, .socials__link:focus {
   background-color: var(--accent-color);
   color: #ffffff;
-}
-
-.socials__icon {
-  fill: currentColor;
 }
 
 .logo {
@@ -522,6 +517,10 @@ button {
   }
 }
 
+img {
+  width: 100%;
+}
+
 .team__title {
   font-weight: 700;
   font-size: 28px;
@@ -538,6 +537,7 @@ button {
 }
 
 .team-list {
+  margin-bottom: -30px;
   margin-top: 30px;
 }
 
@@ -559,13 +559,15 @@ button {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-left: -30px;
+    margin-bottom: -30px;
   }
 }
 
 .team-list__item {
+  margin-bottom: 30px;
   background: #ffffff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -582,8 +584,11 @@ button {
 }
 
 @media screen and (min-width: 1200px) {
-  .team-list__item:not(:last-child) {
-    margin-right: 30px;
+  .team-list__item {
+    -ms-flex-preferred-size: calc(100% / 4 - 30px);
+        flex-basis: calc(100% / 4 - 30px);
+    margin-left: 30px;
+    margin-bottom: 30px;
   }
 }
 
@@ -607,9 +612,23 @@ button {
   margin-bottom: 16px;
 }
 
+.team-socials {
+  padding-bottom: 24px;
+}
+
+@media screen and (min-width: 1200px) {
+  .team-socials {
+    padding-bottom: 30px;
+  }
+}
+
 .team-socials__link {
   background-color: #ffffff;
   color: #afb1b8;
+}
+
+.team-socials__icon {
+  fill: #afb1b8;
 }
 
 .clients {
