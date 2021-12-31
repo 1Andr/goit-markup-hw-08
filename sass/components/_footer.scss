@@ -6,8 +6,35 @@
 
 .footer-container {
   display: flex;
-  flex-direction: row;
-  align-items: baseline;
+  flex-direction: column;
+  text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+    align-items: baseline;
+  }
+}
+
+.container-addres {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    align-items: baseline;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: flex-start;
+    align-items: baseline;
+  }
+}
+
+.footer-contacts {
+  margin-bottom: 60px;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-left: 76px;
+  }
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
 
 .footer-logo {
@@ -63,7 +90,13 @@
 }
 
 .footer-join {
-  margin-left: 70px;
+  margin-bottom: 60px;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-left: 165px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 70px;
+  }
 }
 
 .footer-join__subtitle {
@@ -81,7 +114,10 @@
 }
 
 .footer-subscribe {
-  margin-left: 92px;
+  @media screen and (min-width: 1200px) {
+    // margin-left: 93px;
+    margin-left: auto;
+  }
 }
 
 .footer-subscribe__subtitle {
@@ -91,18 +127,23 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
 
 .subscribe-form {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  align-content: center;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 
 .subscribe-form__input {
   height: 50px;
-  width: 358px;
+  width: 100%;
+
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -123,12 +164,15 @@
     display: flex;
     align-items: center;
   }
+  margin-bottom: 20px;
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+  }
 }
 
 .subscribe-form__btn {
   width: 200px;
   height: 50px;
-  margin-left: 12px;
   background: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -141,8 +185,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0 auto;
+  @media screen and (min-width: 1200px) {
+    margin-left: 12px;
+  }
 }
 
 .subscribe-form__icon-send {
   margin-left: 10px;
+}
+
+.footer-socials__icon {
+  fill: #ffffff;
 }
