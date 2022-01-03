@@ -366,7 +366,7 @@ button {
 }
 
 .mob-menu {
-  padding-left: 40px;
+  padding-left: 25px;
   position: fixed;
   background-color: #ffffff;
   width: 100vw;
@@ -445,8 +445,7 @@ button {
 }
 
 .mob-socila-list__item {
-  padding-left: -10px;
-  margin-left: -10px;
+  margin-right: 10px;
 }
 
 .mob-socila-list__item:not(:last-child) {
@@ -459,8 +458,8 @@ button {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2196f3;
-  padding-left: 10px;
-  margin-left: 10px;
+  padding-right: 10px;
+  height: 100vh;
 }
 
 .hero {
@@ -1460,6 +1459,8 @@ img {
 }
 
 .modal {
+  width: 100vw;
+  height: 100vh;
   background: #ffffff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1474,13 +1475,6 @@ img {
   transition: transform 50ms;
   transition: transform 50ms, -webkit-transform 50ms;
   padding: 40px;
-}
-
-@media screen and (max-width: 479px) {
-  .modal {
-    width: 100vw;
-    height: 100vh;
-  }
 }
 
 @media screen and (min-width: 480px) and (max-width: 1199px) {
@@ -1527,11 +1521,17 @@ img {
 .modal__subtitle {
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
   margin-bottom: 12px;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal__subtitle {
+    line-height: 1.15;
+  }
 }
 
 .form__field {
@@ -1643,8 +1643,8 @@ img {
 }
 
 .form__chec-text {
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: #757575;
   display: -webkit-box;
@@ -1678,6 +1678,13 @@ img {
           justify-content: center;
 }
 
+@media screen and (min-width: 1200px) {
+  .form__chec-text {
+    font-size: 14px;
+    line-height: 1.71;
+  }
+}
+
 .form__icon-chec {
   fill: #ffffff;
 }
@@ -1689,12 +1696,19 @@ img {
 
 .form__policy-text {
   margin-left: 4px;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
   color: #2196f3;
+}
+
+@media screen and (min-width: 1200px) {
+  .form__policy-text {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .form__btn {

@@ -168,7 +168,7 @@
 }
 
 .mob-menu {
-  padding-left: 40px;
+  padding-left: 25px;
   position: fixed;
   background-color: #ffffff;
   width: 100vw;
@@ -239,11 +239,10 @@
 }
 
 .mob-socila-list__item {
-  padding-left: -10px;
-  margin-left: -10px;
   &:not(:last-child) {
     border-right: 1px solid rgba(33, 33, 33, 0.2);
   }
+  margin-right: 10px;
 }
 .mob-socila-list__link {
   font-weight: 500;
@@ -251,6 +250,6 @@
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2196f3;
-  padding-left: 10px;
-  margin-left: 10px;
+  padding-right: 10px;
+  height: 100vh;
 }
